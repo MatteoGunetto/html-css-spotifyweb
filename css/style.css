@@ -6,7 +6,20 @@
     font-family: 'Montserrat', sans-serif;
     color: aqua;
 }
-
+.title{
+    font-size: 14px;
+    color: white;
+}
+span{
+    font-size: 12px;
+    color: white;
+}
+h2{ 
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+}
+/* regole nav-left */
 #container {
     width: 100%;
     height: calc( 100vh - 100px );
@@ -59,6 +72,7 @@ button{
     overflow: auto;
     color: red;
 }
+/* album selection regole */
 .album-action{
     display: flex;
     width: 100%;
@@ -81,11 +95,6 @@ button{
 .album-selection{
     padding-left: 20px;
 }
-.album-selection h2{ 
-    color: white;
-    font-size: 30px;
-    padding-top: 80px;
-}
 .row{
     display: flex;
     gap: 15px;
@@ -98,12 +107,69 @@ button{
 #metal{
     width: 100%;
 }
+#stranger{
+    width: 100%;
+}
+#quiet{
+    width: 100%;
+}
+#split{
+    width: 100%;
+}
+#cure{
+    width: 100%;
+}
+#sinister{
+    width: 100%;
+}
+
 .img-song{
     padding: 20px 0;
 }
 .song-text{
     text-align: center;
     
+}
+/* regole created section */
+.created-selection{
+    padding-left: 20px;
+}
+.created-selection h2{ 
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+}
+.row-created{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.song-created{
+    width: calc(100%/6 - 20px);
+}
+
+#radar{
+    width: 100%;
+}
+#mix{
+    width: 100%;
+
+}
+
+.img-song{
+    padding: 20px 0;
+}
+.song-text{
+    text-align: center;
+    
+}
+#youg{
+    border-radius: 50%;
+    width: 100%;
+}
+#einaudi{
+    border-radius: 50%;
+    width: 100%;
 }
 
 
