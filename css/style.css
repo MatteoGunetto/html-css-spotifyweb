@@ -1,0 +1,84 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: calc( 100vh - 100px );
+    display: flex;
+}
+#Spotify-logo{
+    width: 60%;
+}
+    nav {
+    width: 300px;
+    height: 100%;
+    background-color: #000;
+    padding: 20px;
+    color: #fff
+}
+
+nav ul  {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* regole main */
+main {
+    position: relative;
+    width: calc( 100% - 300px );
+    height: 100%;
+}
+
+#upgrade { 
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 40px 10px;
+    background-color: #080b12dc;
+    text-align: right;
+}
+
+#album {
+    background-color: #141922;
+    height: 100%;
+    padding-top: 110px;
+    overflow: auto;
+    color: red;
+}
+
+/* regole Footer */
+footer {
+
+    height: 100px;
+    background: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    height: 100%;
+    color: #fff;
+}
+
+/* Debug */
+#upgrade {
+    border: yellow solid 3px;
+}
+
+#album {
+    border: rgb(0, 255, 30) solid 3px
+}
+
+main {
+    border: 2px solid violet;
+}
+
+footer>div {
+    border: 1px dotted yellow;
+    width: 200px;
+}
