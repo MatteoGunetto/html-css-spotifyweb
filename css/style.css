@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: aqua;
 }
 
 #container {
@@ -38,9 +40,16 @@ main {
     position: absolute;
     width: 100%;
     height: 100px;
-    padding: 40px 10px;
+    padding: 25px 10px;
     background-color: #080b12dc;
     text-align: right;
+}
+button{
+    color: white;
+    background-color: #080b12dc;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 2px solid white;
 }
 
 #album {
@@ -50,6 +59,56 @@ main {
     overflow: auto;
     color: red;
 }
+.album-action{
+    display: flex;
+    width: 100%;
+}
+.album-action ul{
+    display: flex;
+    list-style: none;
+    color: #5e749b;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+  }
+#lime-underline{
+    border-bottom: 2px solid lime;
+}
+
+.album-selection{
+    padding-left: 20px;
+}
+.album-selection h2{ 
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+}
+.row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.song{
+    width: calc(100%/6 - 20px);
+}
+
+#metal{
+    width: 100%;
+}
+.img-song{
+    padding: 20px 0;
+}
+.song-text{
+    text-align: center;
+    
+}
+
+
+
+
 
 /* regole Footer */
 footer {
