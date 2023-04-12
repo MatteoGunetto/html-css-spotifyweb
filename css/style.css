@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: aqua;
+    color: rgb(248, 248, 248);
 }
 .title{
     font-size: 14px;
@@ -22,18 +22,19 @@ h2{
 /* regole nav-left */
 #container {
     width: 100%;
-    height: calc( 100vh - 100px );
+    height: calc( 100vh - 80px );
     display: flex;
 }
 #Spotify-logo{
-    width: 60%;
+    width: 80%;
+    padding: 20px 22px;
 }
     nav {
-    width: 300px;
+    width: 200px;
     height: 100%;
     background-color: #000;
-    padding: 20px;
-    color: #fff
+    /* padding: 20px; */
+    color: #fff;
 }
 
 nav ul  {
@@ -41,11 +42,44 @@ nav ul  {
     margin-top: 20px;
     font-size: 20px;
 }
+nav li{
+    padding-top: 8px;
+    font-size: 12px;
+}
 
+.fa-solid{
+    font-size: 20px;
+    padding-right:2px;
+}
+.fa-house{
+    border-left: yellow 2px solid;
+    padding-left: 20px;
+}
+.fa-magnifying-glass{
+    padding-left: 22px;
+}
+.fa-chart-column{
+    padding-left: 22px
+}
+#playlist{
+    padding: 0 22px;
+}
+.fa-square-plus{
+    font-size: 35px;
+}
+#playlist span{
+    text-align: center;
+}
+#playlist li{
+    padding-top: 15px;
+}
+#user{
+    margin-top: 50px;
+}
 /* regole main */
 main {
     position: relative;
-    width: calc( 100% - 300px );
+    width: calc( 100% - 200px );
     height: 100%;
 }
 
@@ -87,6 +121,7 @@ button{
     justify-content: center;
     gap: 10px;
     font-weight: 700;
+    flex-wrap: wrap;
   }
 #lime-underline{
     border-bottom: 2px solid lime;
@@ -178,20 +213,50 @@ button{
 
 /* regole Footer */
 footer {
-
-    height: 100px;
+    width: 100%;
+    height: 80px;
     background: #282828;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 footer>div {
     height: 100%;
     color: #fff;
+    display: flex;
+    padding: 20px;
+}
+.img-left{
+    width: 40px;
+}
+.played-song{
+    width: 100%;
+}
+
+.text-left{
+    padding-top: 8px;
+    padding-left: 5px;
+    line-height: 12px;
+}
+.text-left span{
+    font-size: 10px;
+}
+
+.left-simbol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fa-heart{
+    padding: 15px 5px 15px 30px
+}
+
+.fa-folder{
+    padding: 15px 5px
 }
 
 /* Debug */
-#upgrade {
+/* #upgrade {
     border: yellow solid 3px;
 }
 
@@ -206,4 +271,4 @@ main {
 footer>div {
     border: 1px dotted yellow;
     width: 200px;
-}
+} */
