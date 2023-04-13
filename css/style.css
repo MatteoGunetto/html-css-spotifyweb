@@ -265,20 +265,28 @@ button:hover{
     width: 100%;
     min-height: 80px;
     display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+
 }
 .footer-division{
-    width:calc(100%/3);
+    width:calc(100%/3 - 1px);
     display: flex;
-    background-color: purple;
-    border: 2px solid 
-    black 
+    background-color: #282828;
     ;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
 
 .footer-left{
     padding: 20px;
     display: flex;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .img-left{
@@ -310,8 +318,8 @@ button:hover{
 }
 
 .footer-center{
-    min-width: 20px;
     padding: 20px;
+    min-width: 400px;
 }
 .footer-center-action{
     display: flex;
@@ -334,12 +342,12 @@ button:hover{
 #a{
     width: 20%;
     border: 2px solid red;
-    height: 2px;
-
-}
+    height: 2px;}
 #q{
     width: 80%;
     border: 2px solid rgb(38, 0, 255);
+    height: 2px;
+
 
 }
 
@@ -373,7 +381,8 @@ button:hover{
 #s{
     width: 70%;
     border: 2px solid rgb(38, 0, 255);
-    height: 2px;}
+    height: 2px;
+}
 
 
 
@@ -480,7 +489,7 @@ footer>div {
     }
     .footer-center{
         display: block;
-        min-width: 20px;
+        min-width: 300px;
     }
 }
 /* s 639px */
@@ -502,6 +511,10 @@ footer>div {
     
     .fa-folder{
         padding:0
+    }
+    .footer-center{
+        padding: 20px;
+        min-width: 200px;
     }
 }
 @media screen and ( max-width:535px ) {
@@ -533,6 +546,28 @@ footer>div {
     .fa-house{
         border: 0px;
     }
+    .footer-center-action {
+        display: flex;
+        gap: 14px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+    .footer-right {
+        min-width: 170px;
+    }
+    #w {
+        width: 30%;
+    }
+    #s {
+        width: 60%;
+    }
+    .footer-center{
+        padding: 20px;
+        min-width: 200px;
+    }
+
+
+
 }
 
 
