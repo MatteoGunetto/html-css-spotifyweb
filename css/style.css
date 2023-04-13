@@ -14,11 +14,31 @@ span{
     font-size: 12px;
     color: white;
 }
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 h2{ 
     color: white;
     font-size: 30px;
     padding-top: 80px;
 }
+h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+li{
+    color:#4f4f4f;;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* regole nav-left */
 .nav-responsive{
     display: none;
@@ -36,8 +56,7 @@ h2{
     width: 200px;
     height: 100%;
     background-color: #000;
-    /* padding: 20px; */
-    color: #fff;
+    color:#4f4f4f;;
 }
 
 nav ul  {
@@ -49,6 +68,9 @@ nav li{
     padding-top: 8px;
     font-size: 12px;
 }
+nav li:hover{
+    text-decoration: underline;
+}
 
 .fa-solid{
     font-size: 20px;
@@ -57,12 +79,18 @@ nav li{
 .fa-house{
     border-left: yellow 2px solid;
     padding-left: 20px;
+    color: #d2d2d2;
+}
+.home{
+    color: white;
 }
 .fa-magnifying-glass{
     padding-left: 22px;
+    color: #4f4f4f;
 }
 .fa-lines-leaning{
-    padding-left: 22px
+    padding-left: 22px;
+    color: #4f4f4f;
 }
 #playlist{
     padding: 0 22px;
@@ -93,6 +121,7 @@ main {
     padding: 25px 10px;
     background-color: #080b12dc;
     text-align: right;
+    z-index: 100;
 }
 button{
     color: white;
@@ -100,6 +129,10 @@ button{
     border-radius: 20px;
     padding: 10px 30px;
     border: 2px solid white;
+}
+button:hover{
+    color: aqua;
+    border: 2px solid aqua;
 }
 
 #album {
@@ -128,6 +161,7 @@ button{
   }
 #lime-underline{
     border-bottom: 2px solid lime;
+    color: #4f4f4f;
 }
 
 .album-selection{
@@ -144,6 +178,7 @@ button{
 
 #metal{
     width: 100%;
+    position: relative;
 }
 #stranger{
     width: 100%;
@@ -159,6 +194,19 @@ button{
 }
 #sinister{
     width: 100%;
+}
+#metal:hover, 
+#stranger:hover,
+#quiet:hover,
+#split:hover,
+#cure:hover,
+#sinister:hover,
+#radar:hover,
+#mix:hover,
+#youg:hover,
+#einaudi:hover{
+    filter: opacity(0.5);
+    background-color: #141922;
 }
 
 .img-song{
@@ -212,25 +260,27 @@ button{
 }
 
 
-
-
-
 /* regole Footer */
-footer {
+.footer-row{
     width: 100%;
-    height: 80px;
-    background: #282828;
+    min-height: 80px;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
+}
+.footer-division{
+    width:calc(100%/3);
+    display: flex;
+    background-color: purple;
+    border: 2px solid 
+    black 
+    ;
 }
 
-footer>div {
-    height: 100%;
-    color: #fff;
-    display: flex;
+
+.footer-left{
     padding: 20px;
+    display: flex;
 }
+
 .img-left{
     width: 40px;
 }
@@ -258,6 +308,96 @@ footer>div {
 .fa-folder{
     padding: 15px 5px
 }
+
+.footer-center{
+    min-width: 20px;
+    padding: 20px;
+}
+.footer-center-action{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.fa-circle-play{
+    font-size: 20px;
+}
+.played-time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.line{
+    display: flex;
+    width: 100%;
+}
+#a{
+    width: 20%;
+    border: 2px solid red;
+    height: 2px;
+
+}
+#q{
+    width: 80%;
+    border: 2px solid rgb(38, 0, 255);
+
+}
+
+.footer-right{
+    display: flex;
+    min-width: 200px;
+}
+
+.footer-right-action{
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+.line-vol{
+    display: flex;
+    width: 60%;
+    align-items: center
+}
+.fa-bars, .fa-desktop, .fa-volume-high{
+    font-size: 12px;
+}
+.fa-volume-high{
+    padding-right: 5px;
+}
+#w{
+    width: 30%;
+    border: 2px solid red;
+    height: 2px;
+
+}
+#s{
+    width: 70%;
+    border: 2px solid rgb(38, 0, 255);
+    height: 2px;}
+
+
+
+
+
+
+
+
+/* footer {
+    width: 100%;
+    height: 80px;
+    background: #282828;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+footer>div {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
 
 .footer-center{
     display: block;
@@ -324,7 +464,10 @@ footer>div {
     width: 70%;
     border: 2px solid rgb(38, 0, 255);
     height: 2px;
-}
+} */
+
+
+
 
 /* regole responsive */
 /* md 878px */
@@ -371,31 +514,25 @@ footer>div {
         width: 50px;
         height: 100%;
     }
+    .fa-spotify{
+        font-size: 25px;
+        padding: 8px 15px;
+    }
     main {
         position: relative;
         width: calc( 100% - 50px );
         height: 100%;
     }
     .fa-house, 
-    .fa-magnifying-glass, 
+    .fa-magnifying-glass{
+        padding: 8px 15px;
+    }
     .fa-lines-leaning{
         padding: 8px 15px;
     }
     .fa-house{
         border: 0px;
     }
-    .icon{
-        padding: 10px;
-    }
-    footer>div {
-        flex-shrink:2;
-    }
-    footer{
-        flex-shrink: 2;
-    }
-
-
-    
 }
 
 
@@ -445,3 +582,19 @@ footer>div {
     border: 1px dotted yellow;
     width: 200px;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
